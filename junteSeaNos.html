@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="includes/css/styles.css">
+    <title>Junte-se a nós</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+        <img class="logo" src="imgs/logo.png" alt="Nude"></a>
+    </div>
+    <div class="menu">
+        <a href="quemSomos.html">QUEM SOMOS</a>
+        <a href="sigaNos.html">SIGA-NOS</a>
+        <a href="junteSeaNos.html">JUNTE-SE A NOSSA EQUIPA</a>
+    </div>
+    <div class="banner-content">
+         
+    </div class="junteseanos">
+    <br> <div class="titulo">FAÇA PARTE DA NOSSA EQUIPA</div><br><br>
+
+    <p>Para mais informações, preencha os campos a seguir com seu nome, email, seu curriculum vitae e conte-nos porquê gostaria de trabalhar conosco:
+    </p><br>
+    <main>
+        <h3>Nome:</h3>
+        <form> 
+            <input type="text" id="nome" placeholder="Nome Completo">
+         <br>
+        <h3>Carregue seu curriculum vitae:</h3>
+        <form> 
+            <input type="file" id="curriculum" name="curriculum">
+        </form> <br>
+        <h3>Insira seu email:</h3>  
+        <form>
+            <input type="email" id="email" placeholder="Email">
+        </form><br>
+        <h3>Fale mais sobre você</h3>
+        <form> 
+            <label for="mais informações"></label>
+            <textarea id="nome" rows="10" cols="50" placeholder="Deveriamos te contratar porquê..."></textarea> <BR> 
+            <button onclik="enviarDados()" id="enviar">Enviar</button>
+        
+        </form>
+        <p id="mensagem"></p>
+    </main>
+    <script>
+    function enviarDados(e) {
+        e.preventDefault();
+        let dados = "OBRIGADA PELAS INFORMAÇÕES E BOA SORTE!";
+        document.getElementById("mensagem").innerHTML = dados;
+    }
+    const btn = document.getElementById("enviar");
+    btn.addEventListener("click", enviarDados);
+    </script>
+</body>
+</html>
